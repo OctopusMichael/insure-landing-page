@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  /* font w 400 - 700 */
+
+/*   ### Primary */
+
+--darkViolet: hsl(256, 26%, 20%);
+--grayishBlue: hsl(216, 30%, 68%);
+/* 
+### Neutral */
+
+--veryDarkViolet: hsl(270, 9%, 17%);
+--darkGrayishViolet: hsl(273, 4%, 51%);
+--veryLightGray: hsl(0, 0%, 98%);
+
+}
+
+body{
+  background-color: white;
+  
+
+}
+
+h1,h2,h3{
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+}
+p{
+  font-family: 'Karla', sans-serif;
+}
+
+
+.container{
+  background-color: var(--darkViolet);
+  max-width: 1440px;
+  margin: auto;
+  height: auto;
+  position: relative;
+
+}
+
+/* .section {
+  padding: 0px 20px;
+} */
+
+.bg-pattern{
+  position: absolute;
+  top: 900px;
+  right: 0;
+
+}
+.bg-pattern-desktop-left{
+  display: none;
+  
+}
+.bg-pattern-desktop-right{
+  display: none;
+
+}
+
+@media only screen and (min-width: 1200px) {
+  
+  .bg-pattern{
+    display: none;
+    position: absolute;
+    top: 900px;
+    right: 0;
+  
+  }
+
+  .bg-pattern-desktop-left{
+    display: block;
+    position: absolute;
+    top: 526px;
+    left: 0;
+    
+  }
+  .bg-pattern-desktop-right{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+  }
+
+  
+}
