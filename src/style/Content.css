@@ -47,7 +47,7 @@
   margin-top: 100px;
   background-color: var(--darkViolet);
   color: white;
-  height: 340px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -101,6 +101,14 @@
     margin: 40px auto;
     gap: 100px;
   
+  }
+  .content-title{
+    margin-top: 150px;
+  }
+
+  .content-title h1 {
+    font-size: 70px;
+    color: rgb(0, 0, 0);
   }
 
   .card{
